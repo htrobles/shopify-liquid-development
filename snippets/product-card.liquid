@@ -2,7 +2,7 @@
   <div class="border bg-white shadow-lg rounded-lg overflow-hidden h-full">
     <a href="{{ product.url }}">
       {% if product.featured_image %}
-        <div class="h-80 overflow-hidden">
+        <div class="aspect-square w-full overflow-hidden">
           <img
             src="{{ product.featured_image |  image_url: width: 500  }}"
             alt="{{ product.featured_image.alt }}"
@@ -13,7 +13,7 @@
         </div>
 
       {% else %}
-        {{ 'product-1' | placeholder_svg_tag: 'w-full h-80 object-cover bg-gray-100' }}
+        {{ 'product-1' | placeholder_svg_tag: 'aspect-square w-full object-cover bg-gray-100' }}
       {% endif %}
     </a>
 

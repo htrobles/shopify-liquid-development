@@ -1,0 +1,11 @@
+<div class="w-full py-6 px-3">
+  <div class="border bg-white shadow-lg rounded-lg overflow-hidden h-full">
+    {{ 'product-1' | placeholder_svg_tag: 'aspect-square w-full object-cover bg-gray-100' }}
+
+    <div class="flex flex-col p-4">
+      <span class="text-sm text-gray-400">Vendor</span>
+      <a href="{{ product.url }}" class="text-gray-700 uppercase font-medium">Sample Product</a>
+      <p class="text-gray-500">{{ '10000' | money }}</p>
+    </div>
+  </div>
+</div>
